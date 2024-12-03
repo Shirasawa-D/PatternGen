@@ -43,7 +43,7 @@ try:
 
         @classmethod
         def update(self, ctx):
-            if ctx.form_type == idaapi.BWN_DISASM:
+            if ctx.widget_type == idaapi.BWN_DISASM:
                 return idaapi.AST_ENABLE_FOR_FORM
             return idaapi.AST_DISABLE_FOR_FORM
 
